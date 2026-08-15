@@ -7,8 +7,8 @@ Run a survey that includes interactive drawing elements!
 
 - `git clone git@github.com:camoverride/survey_machine.git`
 - `cd survey_machine`
-- `pip install python3-dbus`
-- `python3 -m venv .venv`
+- `sudo apt install python3-dbus`
+- `python3 -m venv .venv --system-site-packages`
 - `source .venv/bin/activate`
 - `pip install -r requirements.txt`
 - `curl https://gitlab.com/Oschowa/gnome-randr/-/raw/master/gnome-randr.py -o gnome-randr.py`
