@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Drawing Experience</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+    <!-- START PAGE -->
+    <section id="page-start" class="page active">
+        <div class="start-content">
+            <h1>Start Here</h1>
+
+            <div class="description">
+                <p>Welcome to the SLU PUBLIC FEEDBACK MACHINE!</p>
+                <p>Please answer a few questions and then add a drawing to the video collage.</p>
+                <p>Take your time.</p>
+                <p>There are no right or wrong answers.</p>
+            </div>
+
+            <button id="start-button" class="big-button" type="button">
+                NEXT
+            </button>
+        </div>
+    </section>
+
+
+    <!-- NAME / ABOUT PAGE -->
+    <section id="page-name" class="page">
+        <header>
+            <h1>TELL US ABOUT YOURSELF</h1>
+        </header>
+
+        <div class="text-question-container">
+
+            <div class="text-question">
+                <label for="name-input">
+                    What is your name?
+                </label>
+
+                <input
+                    id="name-input"
+                    class="text-input"
+                    type="text"
+                    autocomplete="off"
+                    autocorrect="off"
+                    autocapitalize="words"
+                    spellcheck="false"
+                >
+            </div>
+
+            <div class="text-question">
+                <label for="relationship-input">
+                    Describe your relationship to South Lake Union (SLU)
+                </label>
+
+                <input
+                    id="relationship-input"
+                    class="text-input"
+                    type="text"
+                    autocomplete="off"
+                    autocorrect="off"
+                    spellcheck="false"
+                >
+            </div>
+
+            <div class="text-question">
+                <label for="frequency-input">
+                    How often do you visit SLU?
+                </label>
+
+                <input
+                    id="frequency-input"
+                    class="text-input"
+                    type="text"
+                    autocomplete="off"
+                    autocorrect="off"
+                    spellcheck="false"
+                >
+            </div>
+
+        </div>
+
+        <div class="navigation">
+            <button
+                id="name-back"
+                class="secondary-button"
+                type="button"
+            >
+                BACK
+            </button>
+
+            <button
+                id="name-next"
+                class="next-button"
+                type="button"
+            >
+                NEXT
+            </button>
+        </div>
+    </section>
+
+
+    <!-- STORY PAGE -->
+    <section id="page-story" class="page">
+        <header>
+            <h1>TELL ME A STORY</h1>
+            <p>Write anything that comes to mind.</p>
+        </header>
+
+        <canvas
+            id="story-canvas"
+            class="input-canvas"
+        ></canvas>
+
+        <div class="navigation">
+            <button
+                id="story-back"
+                class="secondary-button"
+                type="button"
+            >
+                BACK
+            </button>
+
+            <button
+                id="story-next"
+                class="next-button"
+                type="button"
+            >
+                NEXT
+            </button>
+        </div>
+    </section>
+
+
+    <!-- DRAWING PAGE -->
+    <section id="page-drawing" class="page">
+
+        <div id="drawing-prompt" class="drawing-prompt">
+            Draw something you love.
+        </div>
+
+        <div class="drawing-workspace">
+
+            <canvas id="drawing-canvas"></canvas>
+
+            <div id="palette" class="palette">
+                <button
+                    type="button"
+                    class="palette-color black selected"
+                    data-color="black"
+                    aria-label="Black"
+                ></button>
+
+                <button
+                    type="button"
+                    class="palette-color red"
+                    data-color="red"
+                    aria-label="Red"
+                ></button>
+
+                <button
+                    type="button"
+                    class="palette-color yellow"
+                    data-color="yellow"
+                    aria-label="Yellow"
+                ></button>
+
+                <button
+                    type="button"
+                    class="palette-color blue"
+                    data-color="blue"
+                    aria-label="Blue"
+                ></button>
+
+                <button
+                    type="button"
+                    class="palette-color green"
+                    data-color="green"
+                    aria-label="Green"
+                ></button>
+
+                <button
+                    type="button"
+                    class="palette-color orange"
+                    data-color="orange"
+                    aria-label="Orange"
+                ></button>
+
+                <button
+                    type="button"
+                    class="palette-color brown"
+                    data-color="brown"
+                    aria-label="Brown"
+                ></button>
+
+                <button
+                    type="button"
+                    class="palette-color silver"
+                    data-color="silver"
+                    aria-label="Silver"
+                ></button>
+            </div>
+
+        </div>
+
+        <button
+            id="submit-button"
+            class="submit-button"
+            type="button"
+        >
+            SUBMIT
+        </button>
+    </section>
+
+
+    <!-- THANK YOU PAGE -->
+    <section id="page-thanks" class="page">
+        <div class="thanks-content">
+            <h1>THANKS</h1>
+            <p>Your response has been recorded.</p>
+        </div>
+    </section>
+
+
+    <script src="/static/app.js" defer></script>
+
+</body>
+</html>
