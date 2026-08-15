@@ -29,7 +29,7 @@ let drawingContext = null;
 
 const prompts = [
     "Draw something you want in SLU",
-    "Draw a your favorite place in SLU",
+    "Draw your favorite place in SLU",
     "Draw something in SLU that makes you happy",
     "Draw what comes to mind when you hear 'SLU'"
 ];
