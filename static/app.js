@@ -1126,6 +1126,14 @@ document
         submitDrawing
     );
 
+document
+    .getElementById("drawing-back")
+    .addEventListener(
+        "click",
+        () => {
+            showPage("name");
+        }
+    );
 
 document
     .getElementById("start-over-button")
