@@ -9,6 +9,8 @@ const monitor_url = "/submit";
 
 let currentPage = "start";
 
+let submitTimer = null;
+
 let surveyData = {
     name: "",
     relationship: "",
@@ -976,6 +978,30 @@ async function submitDrawing() {
         return;
     }
 
+    if (submitButton.dataset.armed === "true") {
+
+        submitButton.dataset.armed = "false";
+
+        window.clearTimeout(submitTimer);
+
+    }
+    else {
+
+        submitButton.dataset.armed = "true";
+
+        submitButton.classList.add("armed");
+
+        submitTimer = window.setTimeout(() => {
+
+            submitButton.dataset.armed = "false";
+
+            submitButton.classList.remove("armed");
+
+        }, 3000);
+
+        return;
+    }
+
     submitButton.disabled = true;
 
     submitButton.textContent =
@@ -1283,8 +1309,12 @@ function resetExperience() {
 
     submitButton.disabled = false;
 
+    submitButton.dataset.armed = "false";
+
+    submitButton.classList.remove("armed");
+
     submitButton.textContent =
-        "SUBMIT";
+        "TAP TWICE TO SUBMIT";
 
     /*
      * Get a new prompt for the next participant.
