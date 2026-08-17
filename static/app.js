@@ -1109,6 +1109,13 @@ document
     );
 
 
+document
+    .getElementById("start-over-button")
+    .addEventListener(
+        "click",
+        resetExperience
+    );
+
 /* =========================================================
    RESET CANVAS
    ========================================================= */
