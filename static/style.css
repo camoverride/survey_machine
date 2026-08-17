@@ -699,6 +699,21 @@ header p {
 }
 
 .drawing-back-button {
+    position: fixed;
+
+    bottom: 20px;
+    left: 20px;
+
+    z-index: 20;
+
     font-size: 20px;
     padding: 10px 20px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: rgb(75, 75, 75);
+    color: white;
+
+    cursor: pointer;
 }
