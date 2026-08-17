@@ -15,6 +15,8 @@ let surveyData = {
     name: "",
     relationship: "",
     frequency: "",
+    favorite: "",
+    improve: "",
     story: null
 };
 
@@ -448,10 +450,22 @@ function initializeNamePage() {
             "frequency-input"
         );
 
+    const favoriteInput =
+        document.getElementById(
+            "favorite-input"
+        );
+
+    const improveInput =
+        document.getElementById(
+            "improve-input"
+        );
+
     if (
         !nameInput ||
         !relationshipInput ||
-        !frequencyInput
+        !frequencyInput ||
+        !favoriteInput ||
+        !improveInput
     ) {
 
         console.error(
@@ -475,6 +489,11 @@ function initializeNamePage() {
     frequencyInput.value =
         surveyData.frequency || "";
 
+    favoriteInput.value =
+        surveyData.favorite || "";
+
+    improveInput.value =
+        surveyData.improve || "";
     /*
      * Focus the first field.
      *
@@ -690,6 +709,24 @@ document
                     )
                     .value
                     .trim();
+
+                    
+            surveyData.favorite =
+                document
+                    .getElementById(
+                        "favorite-input"
+                    )
+                    .value
+                    .trim();
+
+            surveyData.improve =
+                document
+                    .getElementById(
+                        "improve-input"
+                    )
+                    .value
+                    .trim();
+
 
             showPage("drawing");
             // showPage("story");
@@ -1252,6 +1289,8 @@ function resetExperience() {
         name: "",
         relationship: "",
         frequency: "",
+        favorite: "",
+        improve: "",
         story: null
     };
 
