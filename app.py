@@ -274,13 +274,13 @@ if __name__ == "__main__":
         logger.info("Failed to rotate screen.")
         logger.info(error)
 
-    # Open a web browser
-    subprocess.Popen([
-        "firefox",
-        "--kiosk",
-        "http://127.0.0.1:5000"
-    ])
-    time.sleep(3)
+    # # Open a web browser
+    # subprocess.Popen([
+    #     "firefox",
+    #     "--kiosk",
+    #     "http://127.0.0.1:5000"
+    # ])
+    # time.sleep(3)
 
 
     # Run the app!
