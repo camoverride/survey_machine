@@ -467,13 +467,13 @@ function initializeNamePage() {
      */
 
     nameInput.value =
-        surveyData.name;
+        surveyData.name || "";
 
     relationshipInput.value =
-        surveyData.relationship;
+        surveyData.relationship || "";
 
     frequencyInput.value =
-        surveyData.frequency;
+        surveyData.frequency || "";
 
     /*
      * Focus the first field.
