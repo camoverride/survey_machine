@@ -766,7 +766,10 @@ const paletteColors = {
         "rgb(150, 75, 0)",
 
     silver:
-        "rgb(180, 180, 180)"
+        "rgb(180, 180, 180)",
+
+    eraser:
+            "rgb(255, 255, 255)"
 };
 
 

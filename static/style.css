@@ -682,3 +682,11 @@ header p {
 .text-input:focus {
     border-color: rgb(45, 110, 95);
 }
+
+.palette-color.eraser {
+    background: white;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
