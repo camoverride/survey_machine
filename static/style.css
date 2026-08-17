@@ -697,3 +697,8 @@ header p {
     align-items: center;
     justify-content: center;
 }
+
+.drawing-back-button {
+    font-size: 20px;
+    padding: 10px 20px;
+}
