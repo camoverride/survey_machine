@@ -367,17 +367,6 @@ function enableDrawing(canvas, context) {
 
             context.stroke();
 
-            /*
-             * Start the next segment from the
-             * current position.
-             */
-
-            context.beginPath();
-
-            context.moveTo(
-                position.x,
-                position.y
-            );
         }
     );
 
