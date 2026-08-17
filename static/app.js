@@ -1133,7 +1133,7 @@ async function submitDrawing() {
 document
     .getElementById("submit-button")
     .addEventListener(
-        "click",
+        "pointerup",
         submitDrawing
     );
 
